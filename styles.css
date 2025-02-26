@@ -1,0 +1,59 @@
+/* Light mode styles */
+:root {
+    --background: linear-gradient(45deg, #6a11cb, #2575fc);
+    --text-color: white;
+    --button-bg: #4CAF50;
+    --button-hover-bg: #45a049;
+    --input-bg: #333;
+    --input-text: white;
+}
+
+/* Dark mode styles */
+[data-theme="dark"] {
+    --background: linear-gradient(45deg, #1e1e2f, #2d2d44);
+    --text-color: #e0e0e0;
+    --button-bg: #555;
+    --button-hover-bg: #666;
+    --input-bg: #444;
+    --input-text: #e0e0e0;
+}
+
+/* Sidebar*/
+
+/* Apply styles */
+.stApp {
+    background: var(--background);
+    color: var(--text-color);
+}
+
+.stButton>button {
+    background-color: var(--button-bg);
+    color: var(--text-color);
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.stButton>button:hover {
+    background-color: var(--button-hover-bg);
+    transform: scale(1.05);
+}
+
+.stSelectbox>div>div>select {
+    background-color: var(--input-bg);
+    color: var(--input-text);
+    border-radius: 5px;
+}
+
+.stNumberInput>div>div>input {
+    background-color: var(--input-bg);
+    color: var(--input-text);
+    border-radius: 5px;
+}
+
+.stSuccess {
+    color: #4CAF50;
+    font-size: 18px;
+    font-weight: bold;
+}
